@@ -2,7 +2,7 @@
 site_name: 基于 Material for MkDocs 搭建静态网页
 site_description: 
 site_author: derrors
-site_url: https://zhangyouyi125.github.io/test.github.io/
+site_url: https://derrors.github.io/
 
 
 # Repository
@@ -33,12 +33,14 @@ theme:
 
 # Customization
 extra:
-
+  social:
+    - type: github
+      link: https://github.com/Derrors
 
   search:
     language: 'ja'
 
-  disqus: 'fuxiis'
+  disqus: 'derrors'
 
 
 # Extensions
