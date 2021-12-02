@@ -1,93 +1,94 @@
-site_name: FUXI IS
+# Project information
+site_name: 基于 Material for MkDocs 搭建静态网页
+site_description: 
+site_author: derrors
 site_url: https://zhangyouyi125.github.io/test.github.io/
-site_description: fuxiis
-site_author: zhangyouyi
 
-repo_name: zhang
-repo_url: https://github.com/zhangyouyi125/wiki
-edit_uri: https://github.com/zhangyouyi125/wiki
+
+# Repository
+repo_name: 'Derrors/Derrors.github.io'
+repo_url: 'https://github.com/Derrors/Derrors.github.io/'
+
+# Copyright
+copyright: "Copyright &copy; 2019 - 2020 Qinghe Li"
 
 
 theme:
   name: material
-  # icon:
-  #   logo: ./assets/8.png
-  logo: ./images/8.png
-    #icon: image/8.png
-  highlightjs: true        # 打开代码高亮
-  hljs_style: github       # 代码高亮风格
-  hljs_languages:          # 编程语言
-    - c
-    - c++
-    - java
-    - python
-    - go
-    - yaml
-  features:
-    - navigation.tabs
-  features:
-    tabs: true
-    
   palette:
-    scheme: default
-    primary: black
-    accent: 'orange'
+    primary: 'deep purple'
+    accent: 'deep purple'
+
+  feature:
+    tabs: true
+
+  #font:
+    #text: 'Ubuntu'
+    #code: 'Ubuntu Mono'
+  
+  favicon: 'assets/images/favicon.ico'
+
+  language: 'zh'
 
 
-nav:
-  - User Manual: index.md
-  - WhitePaper: page1.md
-  # 下面代表的是一组页面
-  - SDK:
-    - Sub Page 1: subpage/page1.md
-    - Sub Page 2: subpage/page2.md
-    - test 2: subpage/测试.md
-
+# Customization
 extra:
-  generator: false
-  social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
+
+
+  search:
+    language: 'ja'
 
   disqus: 'fuxiis'
-   
-
-plugins:
-  - search
-
-copyright: "zhangyouyi"
 
 
+# Extensions
 markdown_extensions:
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.superfences
-  - pymdownx.snippets
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      options:
-        custom_icons:
-          - overrides/.icons
-  - meta 
-  - admonition                                   # 注解块支持
-  - pymdownx.arithmatex                          # 数学公式的TeX语法支持
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:                              # 表情支持
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
-  - pymdownx.tasklist:                           # 任务清单支持
-      custom_checkbox: true
+  - pymdownx.tasklist
   - pymdownx.tilde
-  - meta                                         # 元数据支持
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
 
+# Google Analytics
+google_analytics:
+  - "UA-156919721-1"
+  - "auto"
 
+
+edit_uri:
+
+plugins:
+  - search
+
+nav:
+  - Material for MkDocs: 
+      - 1.介绍: 介绍.md
+      - 2.安装 Mkdocs && Material: 安装 Mkdocs && Material.md
+      - 3.创建新项目: 创建新项目.md
+      - 4.配置 YAML 文件: 配置 YAML 文件.md
+      - 5.开发服务器并生成网页: 开发服务器并生成网页.md
+      - 6.将网页部署到 GitHub Pages: 将网页部署到 GitHub Pages.md
+      - 7.Reference: Reference.md
