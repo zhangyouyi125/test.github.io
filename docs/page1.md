@@ -1,5 +1,0 @@
----
-disqus: <fuxiis>
----
-
-sfaffsa
